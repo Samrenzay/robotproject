@@ -1,72 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220314 11:29:15.354" rpa="false" schemaversion="2">
-<suite id="s1" name="Demo3 Suite" source="D:\ROBOT-SESSION\ROBOT_PROJECT\robot_suite\demo3_suite.robot">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220314 13:15:18.296" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo1 Orangehrm Suite" source="D:\ROBOT-SESSION\ROBOT_PROJECT\selenium_suite\demo1_orangehrm_suite.robot">
 <test id="s1-t1" name="TC1">
-<kw name="Log To Console" library="BuiltIn">
-<arg>D:\\ROBOT-SESSION\\ROBOT_PROJECT\\robot_suite</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220314 11:29:15.572" endtime="20220314 11:29:15.573"/>
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>Path</arg>
+<arg>${EXECDIR}${/}driver${/}</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220314 13:15:18.736" level="INFO">Environment variable 'Path' set to value 'C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\samre\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\samre\AppData\Local\Programs\Python\Python310\;C:\Users\samre\AppData\Local\Microsoft\WindowsApps;;C:\PyCharm 2021.3.2\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\bin;;C:\Users\samre\AppData\Local\Programs\Microsoft VS Code\bin;D:\ROBOT-SESSION\ROBOT_PROJECT\driver\'.</msg>
+<status status="PASS" starttime="20220314 13:15:18.735" endtime="20220314 13:15:18.736"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${EXECDIR}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220314 11:29:15.573" endtime="20220314 11:29:15.574"/>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://opensource-demo.orangehrmlive.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220314 13:15:18.738" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220314 13:15:18.737" endtime="20220314 13:15:33.737"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${OUTPUT_DIR}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220314 11:29:15.574" endtime="20220314 11:29:15.575"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${TEMPDIR}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220314 11:29:15.575" endtime="20220314 11:29:15.576"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${TEST_NAME}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220314 11:29:15.576" endtime="20220314 11:29:15.576"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${SUITE_NAME}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220314 11:29:15.576" endtime="20220314 11:29:15.577"/>
-</kw>
-<status status="PASS" starttime="20220314 11:29:15.571" endtime="20220314 11:29:15.577"/>
+<status status="PASS" starttime="20220314 13:15:18.734" endtime="20220314 13:15:33.738"/>
 </test>
-<test id="s1-t2" name="TC2">
-<kw name="Create Directory" library="OperatingSystem">
-<arg>E:${/}Temp${/}My_Folder</arg>
-<doc>Creates the specified directory.</doc>
-<msg timestamp="20220314 11:29:15.579" level="INFO" html="true">Directory '&lt;a href="file://E:\Temp\My_Folder"&gt;E:\Temp\My_Folder&lt;/a&gt;' already exists.</msg>
-<status status="PASS" starttime="20220314 11:29:15.578" endtime="20220314 11:29:15.579"/>
-</kw>
-<kw name="Create File" library="OperatingSystem">
-<arg>E:${/}Temp${/}My_Folder${/}notes.txt</arg>
-<arg>samreen</arg>
-<doc>Creates a file with the given content and encoding.</doc>
-<msg timestamp="20220314 11:29:15.627" level="INFO" html="true">Created file '&lt;a href="file://E:\Temp\My_Folder\notes.txt"&gt;E:\Temp\My_Folder\notes.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220314 11:29:15.579" endtime="20220314 11:29:15.627"/>
-</kw>
-<kw name="Copy File" library="OperatingSystem">
-<arg>E:${/}Temp${/}My_Folder${/}notes.txt</arg>
-<arg>E:${/}Temp${/}My_Folder${/}notes1.txt</arg>
-<doc>Copies the source file into the destination.</doc>
-<msg timestamp="20220314 11:29:15.652" level="INFO" html="true">Copied file from '&lt;a href="file://E:\Temp\My_Folder\notes.txt"&gt;E:\Temp\My_Folder\notes.txt&lt;/a&gt;' to '&lt;a href="file://E:\Temp\My_Folder\notes1.txt"&gt;E:\Temp\My_Folder\notes1.txt&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220314 11:29:15.628" endtime="20220314 11:29:15.652"/>
-</kw>
-<status status="PASS" starttime="20220314 11:29:15.578" endtime="20220314 11:29:15.653"/>
-</test>
-<status status="PASS" starttime="20220314 11:29:15.358" endtime="20220314 11:29:15.655"/>
+<status status="PASS" starttime="20220314 13:15:18.299" endtime="20220314 13:15:33.741"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Demo3 Suite">Demo3 Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo1 Orangehrm Suite">Demo1 Orangehrm Suite</stat>
 </suite>
 </statistics>
 <errors>
