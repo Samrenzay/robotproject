@@ -13,5 +13,6 @@ TC2
    Create Directory     E:${/}Temp${/}My_Folder
    Create File          E:${/}Temp${/}My_Folder${/}notes.txt     samreen
    Copy File            E:${/}Temp${/}My_Folder${/}notes.txt  E:${/}Temp${/}My_Folder${/}notes1.txt
-#remove directory
-#remove file
+   sleep          2s
+   remove file          E:${/}Temp${/}My_Folder${/}notes1.txt
+   remove Directory     E:${/}Temp${/}My_Folder True
