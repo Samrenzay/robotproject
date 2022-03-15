@@ -13,3 +13,5 @@ TC1
      Input Text    id=getInTouchEmail    sam@gmail.com
      Input Text    id=getInTouchMobile    7889600001
      Input Text    id=getInTouchEmpCount    5
+     Click Element  xpath=// button[text()='Get in Touch']
+     Close Window
