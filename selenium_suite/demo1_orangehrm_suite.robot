@@ -6,7 +6,7 @@ TC1
    Append To Environment Variable      Path      ${EXECDIR}${/}driver${/}
    open Browser    url=https://opensource-demo.orangehrmlive.com/  browser=chrome
    Maximize Browser Window
-   Set Selenium Implicit Wait     10s
+   Set Selenium Implicit Wait    10s
    Input Text    id=txtUsername   Admin
    Input Password    id=txtPassword    admin123
    Click Element      id=btnLogin
@@ -17,6 +17,7 @@ TC2
     Append To Environment Variable      Path      ${EXECDIR}${/}driver${/}
     open Browser    url=https://opensource-demo.orangehrmlive.com/  browser=chrome
     Maximize Browser Window
+    Set Selenium Implicit Wait    10S
     Input Text        id=txtUsername   Admin
     Input Password    id=txtPassword    admin123
     Click Element      id=btnLogin
@@ -28,7 +29,6 @@ TC2
     Input Text       id=emgcontacts_relationship  brother
     Input Text       id=emgcontacts_homePhone     89705
     Click Element    id=btnSaveEContact
-
 
 
 

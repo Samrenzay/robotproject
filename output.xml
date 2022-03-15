@@ -1,101 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220314 17:54:01.863" rpa="false" schemaversion="2">
-<suite id="s1" name="Demo1 Orangehrm Suite" source="D:\ROBOT-SESSION\ROBOT_PROJECT\selenium_suite\demo1_orangehrm_suite.robot">
-<test id="s1-t1" name="TC2">
-<kw name="Append To Environment Variable" library="OperatingSystem">
-<arg>Path</arg>
-<arg>${EXECDIR}${/}driver${/}</arg>
-<doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220314 17:54:02.460" level="INFO">Environment variable 'Path' set to value 'C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\samre\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\samre\AppData\Local\Programs\Python\Python310\;C:\Users\samre\AppData\Local\Microsoft\WindowsApps;;C:\PyCharm 2021.3.2\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\bin;;C:\Users\samre\AppData\Local\Programs\Microsoft VS Code\bin;D:\ROBOT-SESSION\ROBOT_PROJECT\driver\'.</msg>
-<status status="PASS" starttime="20220314 17:54:02.460" endtime="20220314 17:54:02.460"/>
-</kw>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220315 10:47:09.198" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo2 Meeting Suite" source="D:\ROBOT-SESSION\ROBOT_PROJECT\selenium_suite\demo2_meeting_suite.robot">
+<test id="s1-t1" name="TC1">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>url=https://opensource-demo.orangehrmlive.com/</arg>
+<arg>url=https://www.goto.com/meeting/</arg>
 <arg>browser=chrome</arg>
+<arg>executable_path=${EXECDIR}${/}driver${/}chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220314 17:54:02.460" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20220314 17:54:02.460" endtime="20220314 17:54:17.545"/>
+<msg timestamp="20220315 10:47:09.596" level="INFO">Opening browser 'chrome' to base url 'https://www.goto.com/meeting/'.</msg>
+<status status="PASS" starttime="20220315 10:47:09.596" endtime="20220315 10:47:20.116"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220314 17:54:17.545" endtime="20220314 17:54:17.693"/>
+<status status="PASS" starttime="20220315 10:47:20.116" endtime="20220315 10:47:21.046"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220315 10:47:21.047" endtime="20220315 10:47:21.053"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=truste-consent-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 10:47:21.057" level="INFO">Clicking element 'id=truste-consent-button'.</msg>
+<status status="PASS" starttime="20220315 10:47:21.055" endtime="20220315 10:47:22.927"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Get a Demo</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220315 10:47:22.929" level="INFO">Clicking element 'link=Get a Demo'.</msg>
+<status status="PASS" starttime="20220315 10:47:22.928" endtime="20220315 10:47:26.714"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=txtUsername</arg>
-<arg>Admin</arg>
+<arg>xpath=//input[@data-sc-field-name='firstName']</arg>
+<arg>john</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:17.693" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
-<status status="PASS" starttime="20220314 17:54:17.693" endtime="20220314 17:54:17.962"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id=txtPassword</arg>
-<arg>admin123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:17.962" level="INFO">Typing password into text field 'id=txtPassword'.</msg>
-<msg timestamp="20220314 17:54:18.031" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220314 17:54:18.115" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220314 17:54:17.962" endtime="20220314 17:54:18.115"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=btnLogin</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:18.115" level="INFO">Clicking element 'id=btnLogin'.</msg>
-<status status="PASS" starttime="20220314 17:54:18.115" endtime="20220314 17:54:23.856"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=menu_pim_viewMyDetails</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:23.856" level="INFO">Clicking element 'id=menu_pim_viewMyDetails'.</msg>
-<status status="PASS" starttime="20220314 17:54:23.856" endtime="20220314 17:54:25.882"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>My Info</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220314 17:54:25.946" level="INFO">Current page contains text 'My Info'.</msg>
-<status status="PASS" starttime="20220314 17:54:25.882" endtime="20220314 17:54:25.946"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>Partial link=Emergency Contacts</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:25.946" level="INFO">Clicking element 'Partial link=Emergency Contacts'.</msg>
-<status status="PASS" starttime="20220314 17:54:25.946" endtime="20220314 17:54:27.209"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=btnAddContact</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:27.209" level="INFO">Clicking element 'id=btnAddContact'.</msg>
-<status status="PASS" starttime="20220314 17:54:27.209" endtime="20220314 17:54:27.317"/>
+<msg timestamp="20220315 10:47:26.715" level="INFO">Typing text 'john' into text field 'xpath=//input[@data-sc-field-name='firstName']'.</msg>
+<status status="PASS" starttime="20220315 10:47:26.715" endtime="20220315 10:47:27.441"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>name=emgcontacts[name]</arg>
-<arg>samreen</arg>
+<arg>xpath=//input[@data-sc-field-name='lastName']</arg>
+<arg>wick</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:27.317" level="INFO">Typing text 'samreen' into text field 'name=emgcontacts[name]'.</msg>
-<status status="PASS" starttime="20220314 17:54:27.317" endtime="20220314 17:54:27.506"/>
+<msg timestamp="20220315 10:47:27.443" level="INFO">Typing text 'wick' into text field 'xpath=//input[@data-sc-field-name='lastName']'.</msg>
+<status status="PASS" starttime="20220315 10:47:27.442" endtime="20220315 10:47:27.605"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>id=emgcontacts_relationship</arg>
-<arg>brother</arg>
+<arg>xpath=//input[@data-sc-field-name='email']</arg>
+<arg>john@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:27.506" level="INFO">Typing text 'brother' into text field 'id=emgcontacts_relationship'.</msg>
-<status status="PASS" starttime="20220314 17:54:27.506" endtime="20220314 17:54:27.675"/>
+<msg timestamp="20220315 10:47:27.607" level="INFO">Typing text 'john@gmail.com' into text field 'xpath=//input[@data-sc-field-name='email']'.</msg>
+<status status="PASS" starttime="20220315 10:47:27.606" endtime="20220315 10:47:27.736"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=emgcontacts_homePhone</arg>
-<arg>89705</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:27.675" level="INFO">Typing text '89705' into text field 'id=emgcontacts_homePhone'.</msg>
-<status status="PASS" starttime="20220314 17:54:27.675" endtime="20220314 17:54:27.835"/>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>xpath=//select[@data-sc-field-name="employees"]</arg>
+<arg>10 - 99</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220315 10:47:27.737" level="INFO">Selecting options from selection list 'xpath=//select[@data-sc-field-name="employees"]' by label 10 - 99.</msg>
+<status status="PASS" starttime="20220315 10:47:27.736" endtime="20220315 10:47:27.814"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id=btnSaveEContact</arg>
+<arg>xpath=//input[@type='submit']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220314 17:54:27.835" level="INFO">Clicking element 'id=btnSaveEContact'.</msg>
-<status status="PASS" starttime="20220314 17:54:27.835" endtime="20220314 17:54:29.472"/>
+<msg timestamp="20220315 10:47:27.817" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20220315 10:47:27.816" endtime="20220315 10:47:28.067"/>
 </kw>
-<status status="PASS" starttime="20220314 17:54:02.458" endtime="20220314 17:54:29.472"/>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220315 10:47:28.069" endtime="20220315 10:47:30.707"/>
+</kw>
+<status status="PASS" starttime="20220315 10:47:09.595" endtime="20220315 10:47:30.708"/>
 </test>
-<status status="PASS" starttime="20220314 17:54:01.863" endtime="20220314 17:54:29.480"/>
+<status status="PASS" starttime="20220315 10:47:09.201" endtime="20220315 10:47:30.714"/>
 </suite>
 <statistics>
 <total>
@@ -104,7 +80,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo1 Orangehrm Suite">Demo1 Orangehrm Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Meeting Suite">Demo2 Meeting Suite</stat>
 </suite>
 </statistics>
 <errors>
