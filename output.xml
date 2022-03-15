@@ -1,87 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220315 12:17:24.923" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220315 12:46:43.855" rpa="false" schemaversion="2">
 <suite id="s1" name="Demo3 Meddibuddy Tabs Suite" source="D:\ROBOT-SESSION\ROBOT_PROJECT\selenium_suite\demo3_meddibuddy_tabs_suite.robot">
 <test id="s1-t1" name="TC1">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <arg>executable_path=${EXECDIR}${/}driver${/}chromedriver.exe</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220315 12:17:25.734" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220315 12:17:25.734" endtime="20220315 12:17:33.710"/>
+<msg timestamp="20220315 12:46:44.572" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220315 12:46:44.572" endtime="20220315 12:46:54.716"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220315 12:17:33.711" endtime="20220315 12:17:33.873"/>
+<status status="PASS" starttime="20220315 12:46:54.718" endtime="20220315 12:46:54.903"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>20s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220315 12:17:33.874" endtime="20220315 12:17:33.880"/>
+<status status="PASS" starttime="20220315 12:46:54.904" endtime="20220315 12:46:54.909"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=https://www.medibuddy.in/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220315 12:17:33.882" level="INFO">Opening url 'https://www.medibuddy.in/'</msg>
-<status status="PASS" starttime="20220315 12:17:33.882" endtime="20220315 12:17:35.747"/>
+<msg timestamp="20220315 12:46:54.912" level="INFO">Opening url 'https://www.medibuddy.in/'</msg>
+<status status="PASS" starttime="20220315 12:46:54.911" endtime="20220315 12:46:57.070"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//button[text()='Not Now']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 12:17:35.752" level="INFO">Clicking element 'xpath=//button[text()='Not Now']'.</msg>
-<status status="PASS" starttime="20220315 12:17:35.748" endtime="20220315 12:17:48.303"/>
+<msg timestamp="20220315 12:46:57.073" level="INFO">Clicking element 'xpath=//button[text()='Not Now']'.</msg>
+<status status="PASS" starttime="20220315 12:46:57.072" endtime="20220315 12:47:06.900"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>link=For Employer</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 12:17:48.306" level="INFO">Clicking element 'link=For Employer'.</msg>
-<status status="PASS" starttime="20220315 12:17:48.304" endtime="20220315 12:17:48.818"/>
+<msg timestamp="20220315 12:47:06.903" level="INFO">Clicking element 'link=For Employer'.</msg>
+<status status="PASS" starttime="20220315 12:47:06.902" endtime="20220315 12:47:07.226"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MediBuddy LaunchPad</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220315 12:17:48.822" endtime="20220315 12:17:55.372"/>
+<status status="PASS" starttime="20220315 12:47:07.229" endtime="20220315 12:47:11.287"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=getInTouchName</arg>
 <arg>sam</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 12:17:55.377" level="INFO">Typing text 'sam' into text field 'id=getInTouchName'.</msg>
-<status status="PASS" starttime="20220315 12:17:55.375" endtime="20220315 12:17:56.177"/>
+<msg timestamp="20220315 12:47:11.295" level="INFO">Typing text 'sam' into text field 'id=getInTouchName'.</msg>
+<status status="PASS" starttime="20220315 12:47:11.292" endtime="20220315 12:47:12.887"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=getInTouchEmail</arg>
 <arg>sam@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 12:17:56.179" level="INFO">Typing text 'sam@gmail.com' into text field 'id=getInTouchEmail'.</msg>
-<status status="PASS" starttime="20220315 12:17:56.178" endtime="20220315 12:17:56.481"/>
+<msg timestamp="20220315 12:47:12.889" level="INFO">Typing text 'sam@gmail.com' into text field 'id=getInTouchEmail'.</msg>
+<status status="PASS" starttime="20220315 12:47:12.888" endtime="20220315 12:47:13.227"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=getInTouchMobile</arg>
-<arg>7889600001</arg>
+<arg>12345</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 12:17:56.483" level="INFO">Typing text '7889600001' into text field 'id=getInTouchMobile'.</msg>
-<status status="PASS" starttime="20220315 12:17:56.483" endtime="20220315 12:17:56.676"/>
+<msg timestamp="20220315 12:47:13.229" level="INFO">Typing text '12345' into text field 'id=getInTouchMobile'.</msg>
+<status status="PASS" starttime="20220315 12:47:13.228" endtime="20220315 12:47:13.418"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=getInTouchDesignation</arg>
+<arg>employee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220315 12:47:13.420" level="INFO">Typing text 'employee' into text field 'id=getInTouchDesignation'.</msg>
+<status status="PASS" starttime="20220315 12:47:13.419" endtime="20220315 12:47:13.633"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=getInTouchEmpCount</arg>
 <arg>5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 12:17:56.677" level="INFO">Typing text '5' into text field 'id=getInTouchEmpCount'.</msg>
-<status status="PASS" starttime="20220315 12:17:56.676" endtime="20220315 12:17:56.803"/>
+<msg timestamp="20220315 12:47:13.635" level="INFO">Typing text '5' into text field 'id=getInTouchEmpCount'.</msg>
+<status status="PASS" starttime="20220315 12:47:13.634" endtime="20220315 12:47:13.788"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=// button[text()='Get in Touch']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 12:17:56.804" level="INFO">Clicking element 'xpath=// button[text()='Get in Touch']'.</msg>
-<status status="PASS" starttime="20220315 12:17:56.804" endtime="20220315 12:17:56.942"/>
+<msg timestamp="20220315 12:47:13.789" level="INFO">Clicking element 'xpath=// button[text()='Get in Touch']'.</msg>
+<status status="PASS" starttime="20220315 12:47:13.789" endtime="20220315 12:47:13.934"/>
 </kw>
-<kw name="Close Window" library="SeleniumLibrary">
-<doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" starttime="20220315 12:17:56.943" endtime="20220315 12:17:57.114"/>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//div[contains(text(),'digits')]</arg>
+<arg>Mobile Number should be 10 digits</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220315 12:47:13.936" level="INFO">Verifying element '//div[contains(text(),'digits')]' contains exact text 'Mobile Number should be 10 digits'.</msg>
+<status status="PASS" starttime="20220315 12:47:13.935" endtime="20220315 12:47:13.999"/>
 </kw>
-<status status="PASS" starttime="20220315 12:17:25.733" endtime="20220315 12:17:57.114"/>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220315 12:47:14.000" endtime="20220315 12:47:19.415"/>
+</kw>
+<status status="PASS" starttime="20220315 12:46:44.571" endtime="20220315 12:47:19.416"/>
 </test>
-<status status="PASS" starttime="20220315 12:17:24.927" endtime="20220315 12:17:57.117"/>
+<status status="PASS" starttime="20220315 12:46:43.956" endtime="20220315 12:47:19.419"/>
 </suite>
 <statistics>
 <total>
