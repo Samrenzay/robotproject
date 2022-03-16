@@ -14,3 +14,10 @@ TC1
     Click Element    xpath=//div[@class="tabSpan bgcolor2 tabsNoHover"]
     Select Frame     name=msg
     Click Element    partial link=Add New
+    Input Text       id=note                 hello
+    Select From List By Label      id=form_note_type            pharmacy
+    Select From List By Label      id=form_message_status       Forwarded
+    Select From List By Index      id=users
+    Click Button                   xpath=//button[@id="newtone"]
+    Element Text Should Be
+
