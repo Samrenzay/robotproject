@@ -14,4 +14,3 @@ TC1
     Click Element    xpath=//div[@class="tabSpan bgcolor2 tabsNoHover"]
     Select Frame     name=msg
     Click Element    partial link=Add New
-    Input Text
