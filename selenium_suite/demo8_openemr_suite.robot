@@ -11,5 +11,7 @@ TC1
     Input Text     id=clearPass   pass
     Select From List By Label      name=languageChoice      English (Indian)
     Click Element    xpath=//button[@type='submit']
-    Click Element    xpath=//div[@class="tabSpan
-    Select Frame     xpath=//iframe[@name='msg']
+    Click Element    xpath=//div[@class="tabSpan bgcolor2 tabsNoHover"]
+    Select Frame     name=msg
+    Click Element    partial link=Add New
+    Input Text
