@@ -4,7 +4,8 @@ Library     SeleniumLibrary
 Test Teardown       Close Browser
 
 *** Test Cases ***
-TC1 Sign Up
+TC1 Sign Up Password Error Check
+    
     Open Browser    browser=chrome     executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
     Maximize Browser Window
     Set Selenium Implicit Wait    20s
@@ -27,4 +28,9 @@ TC1 Sign Up
     Input Text       xpath=//input[@data-placeholder="Answer"]    xyz
     Click Element    xpath=//span[@class="mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin"]
     Click Element    xpath=//button[normalize-space()="Done"]
+    Element Text Should Be    xpath=//span[contains(text(),'Password')]    Password is required.
+
     sleep   5s
+
+
+

@@ -2,7 +2,9 @@
 Library     SeleniumLibrary
 *** Test Cases ***
 TC1
-     open Browser        browser=chrome  executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
+#     open Browser        browser=headlesschrome  executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
+    open Browser        browser=chrome  executable_path=${EXECDIR}${/}driver${/}chromedriver.exe
+
      Maximize Browser Window
      Set Selenium Implicit Wait   20s
      Go To    url=https://www.medibuddy.in/
