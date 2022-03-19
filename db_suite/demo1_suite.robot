@@ -21,7 +21,16 @@ TC1
 TC3
     Row Count Is Equal To X    select * from Products where Product_id=10    1
 
-
+TC4
+# use keyword "Query" to get the select statement ouput as list
+    @{output}   Query    select * from Products
+    Log To Console       ${output}
+    Log To Console       ${output}[0]
+TC5
+#update query "Execute Sql String"
+    Execute Sql String    update Products set productname='sam' where Product_id=720
+     @{output}   Query    select * from Products   where Product_id=720
+     Log To Console       ${output}
 
 
 
